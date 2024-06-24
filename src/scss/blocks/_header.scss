@@ -1,0 +1,56 @@
+.header {
+  padding: 15px 0;
+  background-color: var(--background-header);
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__link {
+    font-size: 15px;
+    color: var(--color-header-text);
+    position: relative;
+    cursor: pointer;
+  }
+  &__link:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background-color: #11b355;
+    transition: 0.3s;
+  }
+  &__link:hover {
+    color: #7d8a82;
+  }
+  &__link:hover::after {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .header {
+    &__menu {
+      overflow-x: auto;
+      padding-bottom: 5px;
+    }
+    &__menu::-webkit-scrollbar {
+      height: 7px;
+    }
+    &__menu::-webkit-scrollbar-thumb {
+      background-color: #11b355;
+      border-radius: 10px;
+    }
+    &__menu::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: var(--background-page);
+    }
+    &__link {
+      white-space: nowrap;
+    }
+    &__link:after {
+      display: none;
+    }
+  }
+}

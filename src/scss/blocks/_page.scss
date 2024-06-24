@@ -1,0 +1,33 @@
+.page {
+  background-color: var(--background-page);
+  &__wrqpper {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  &__tel {
+    font-size: 15px;
+    color: var(--white);
+    cursor: pointer;
+  }
+}
+@media( max-width: 500px) {
+  .page {
+    &__logo {
+      width: 50%;
+    }
+    &__tel {
+      display: block !important;
+    }
+    &__row a {
+      display: none;
+    }
+  }
+}

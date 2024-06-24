@@ -1,0 +1,30 @@
+.map {
+  margin: 98px 0;
+  &__title {
+    margin-bottom: 70px;
+    font-size: 35px;
+    color: var(--color-header-text);
+  }
+  &__iframe {
+    height: 700px;
+    width: 100%;
+  }
+}
+@media(max-width: 850px) {
+  .map {
+    margin: 65px 0;
+    &__title {
+      margin-bottom: 45px;
+      font-size: 30px;
+    }
+  }
+}
+@media(max-width: 550px) {
+  .map {
+    margin: 35px 0;
+    &__title {
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+  }
+}

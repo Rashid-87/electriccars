@@ -1,0 +1,91 @@
+.answers {
+  margin: 98px 0;
+  &__wrapp {
+    padding: 28px 150px 20px 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  &__page {
+    margin-bottom: 70px;
+    font-size: 35px;
+    color: var(--color-header-text);
+  }
+  &__title {
+    font-size: 20px;
+    color: var(--color-header-text);
+  }
+  &__icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--color-electrocars);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__dist {
+    margin-top: 15px;
+    font-size: 15px;
+    color: var(--color-header-text);
+    display: none;
+  }
+  &__active {
+    .answers__title {
+      color: var(--color-electrocars);
+    }
+    .answers__dist {
+      display: block;
+    }
+    .answers__icon {
+      transform: rotate(180deg);
+      svg {
+        fill: var(--white);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .answers {
+    margin: 65px 0;
+    &__page {
+      margin-bottom: 50px;
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .answers {
+    margin: 40px 0;
+    &__wrapp {
+      padding: 20px 60px 20px 20px;
+    }
+    &__page {
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .answers {
+    margin: 30px 0;
+    &__wrapp {
+      padding: 20px 60px 20px 20px;
+    }
+    &__page {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 17px;
+    }
+    &__dist {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  }
+}

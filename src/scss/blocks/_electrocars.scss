@@ -1,0 +1,138 @@
+.electrocars {
+  background-image: url(./../../src/img/electrocars/cars.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__wrapper {
+    padding-top: 150px;
+    width: 580px;
+  }
+  &__title {
+    font-size: 44px;
+    color: var(--white);
+  }
+  &__text {
+    margin: 20px 0 25px 0;
+    font-size: 22px;
+    color: var(--white);
+  }
+  &__wrapp {
+    display: flex;
+    column-gap: 45px;
+  }
+  &__btn {
+    padding: 15px 90px;
+    display: inline-block;
+    border: none;
+    background: none;
+    font-size: 15px;
+    border-radius: 43px;
+    color: var(--white);
+    background-color: var(--color-electrocars);
+    -webkit-tap-highlight-color: rgba(225, 225, 225, 0);
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+  }
+  &__btn:hover {
+    background-color: var(--color-electrocars-btn);
+    transition: 0.3s;
+  }
+  &__btn:active {
+    background-color: var(--color-electrocars);
+    color: var(--black);
+  }
+  &__button {
+    padding: 15px 110px;
+    display: inline-block;
+    border: none;
+    background: none;
+    font-size: 15px;
+    border-radius: 43px;
+    color: var(--white);
+    background-color: var(--color-electrocars-btn);
+    -webkit-tap-highlight-color: rgba(225, 225, 225, 0);
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+  }
+  &__button:hover {
+    transition: 0.3s;
+    background-color: var(--color-electrocars);
+  }
+  &__button:active {
+    background-color: var(--color-electrocars-btn);
+    color: var(--black);
+  }
+  &__row {
+    padding: 150px 0 50px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 110px;
+  }
+  &__rows {
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  &__desc {
+    font-size: 15px;
+    color: var(--white);
+  }
+}
+@media(max-width: 995px) {
+  .electrocars {
+    &__wrapper {
+      padding-top: 100px;
+    }
+    &__row {
+      padding: 100px 0 50px 0;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  }
+}
+@media(max-width: 600px) {
+  .electrocars {
+    &__wrapper {
+      width: 100%;
+    }
+    &__wrapp {
+      gap: 15px;
+    }
+    &__btn {
+      padding: 15px 80px;
+    }
+  }
+}
+@media(max-width: 550px) {
+  .electrocars {
+    &__wrapper {
+      padding-top: 80px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__text {
+      margin: 15px 0 20px 0;
+      font-size: 20px;
+    }
+    &__row {
+      padding: 60px 0 40px 0;
+    }
+    &__rows {
+      justify-content: left;
+      width: 100%;
+    }
+    &__wrapp {
+      flex-wrap: wrap;
+    }
+    &__btn {
+      width: 100%;
+    }
+    &__button {
+      width: 100%;
+    }
+  }
+}
